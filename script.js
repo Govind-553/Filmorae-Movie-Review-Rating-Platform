@@ -314,17 +314,17 @@
                 {
                     text: "Filmorae is my go-to for finding new movies. The reviews from other users are so helpful!",
                     author: "Alex M.",
-                    photo: "./img/person2.png"
+                    photo: "/img/person2.png"
                 },
                 {
                     text: "A fantastic platform! The interface is clean, and the rating system is simple and effective. I love the interactive elements.",
                     author: "Sarah P.",
-                    photo: "./img/person1.png"
+                    photo: "/img/person1.png"
                 },
                 {
                     text: "I love the new look! The site is now even more user-friendly and aesthetically pleasing. A great hub for movie lovers.",
                     author: "Michael R.",
-                    photo: "./img/person3.png"
+                    photo: "/img/person3.png"
                 }
             ];
 
