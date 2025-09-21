@@ -1,7 +1,7 @@
 # Filmorae: Your Movie Review & Rating Platform 🎬
 Filmorae is a modern, responsive web application that allows users to search for movies, view detailed information, and share their reviews. Built as a static site, it leverages the OMDB API to fetch movie data and uses local storage to save user reviews.
 
---- 
+---
 
 ## ✨ Features
 
@@ -33,22 +33,23 @@ Filmorae is a modern, responsive web application that allows users to search for
 
 ## 🚀 Getting Started
 
-    To get a copy of the project up and running on your local machine, follow these simple steps.
+To get a copy of the project up and running on your local machine, follow these simple steps.
 
 ### Prerequisites
 
-    You need to have Node.js and npm installed on your system.
+You need to have **Node.js** and **npm** installed on your system.
 
 ### Installation
 
-    Clone the repository:
+Clone the repository:
 
-            git clone <your-repository-url>
-            cd filmorae-movie-reviews
+    git clone <your-repository-url>
+    
+    cd filmorae-movie-reviews
 
 ### Install dependencies:
 
-            npm install
+    npm install
 
 ### Environment Variables
 
@@ -58,13 +59,13 @@ This project uses an API key to fetch movie data. To keep your key secure, you m
 
 * Add your OMDB API key to the file in the following format:
 
-            VITE_OMDB_API_KEY=your_api_key_here
+      VITE_OMDB_API_KEY=your_api_key_here
 
 ### Running the Project
 
 To start the local development server:
 
-            npm run dev
+    npm run dev
 
 Open your browser and navigate to the address shown in your terminal<br>
 (usually http://localhost:5173).
