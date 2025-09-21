@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmorae – Feel the Aura of Cinema</title>
+    <link rel="icon" href="img/movie.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="navbar container">
+            <h1 class="logo"><i class="fa-solid fa-film"></i> Filmorae</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <hero-section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Feel the Aura of Cinema</h1>
+            <p>Discover, rate, and review your favorite films with Filmorae.</p>
+            <div class="search-container">
+                <input type="text" id="movie-search" class="search-input" placeholder="Search for a movie...">
+                <button class="clear-search-btn" id="clear-search-btn"><i class="fa-solid fa-xmark"></i></button>
+                <button class="search-button" id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </hero-section>
+
+    <!-- Popular Movies Carousel -->
+    <section class="container" id="trending-movies-section">
+        <h2 class="section-heading">Trending Movies</h2>
+        <div class="movie-carousel-container">
+            <div class="movie-carousel" id="trending-movies">
+                <!-- Trending movie cards will be dynamically inserted here -->
+            </div>
+            <div class="carousel-buttons">
+                <button class="carousel-btn left-btn" data-target="trending-movies"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn right-btn" data-target="trending-movies"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Rated Movies Carousel -->
+    <section class="container" id="top-rated-movies-section">
+        <h2 class="section-heading">Top Rated Movies</h2>
+        <div class="movie-carousel-container">
+            <div class="movie-carousel" id="top-rated-movies">
+                <!-- Top rated movie cards will be dynamically inserted here -->
+            </div>
+            <div class="carousel-buttons">
+                <button class="carousel-btn left-btn" data-target="top-rated-movies"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="carousel-btn right-btn" data-target="top-rated-movies"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="container">
+        <h2 class="section-heading">Our Core Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fa-solid fa-film"></i>
+                <h3>Discover Movies</h3>
+                <p>Explore an extensive database of films, from timeless classics to the latest blockbusters.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-star"></i>
+                <h3>Rate & Review</h3>
+                <p>Share your honest opinions by rating and writing reviews for any movie you watch.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-users"></i>
+                <h3>Connect with Others</h3>
+                <p>See what your friends are watching and join a community of passionate film enthusiasts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Results -->
+    <section class="movies-section container">
+        <h2 class="section-heading">Search Results</h2>
+        <div id="loader" class="loader"></div>
+        <div class="movie-grid" id="movie-results">
+            <!-- Movie cards will be dynamically inserted here -->
+        </div>
+        <button class="load-more-btn" id="load-more-btn" style="display: none;">Load More</button>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container">
+        <h2 class="section-heading">What Our Users Say</h2>
+        <div class="testimonials-container">
+            <div id="testimonial-display">
+                <!-- Testimonial will be dynamically inserted here -->
+            </div>
+            <div class="testimonial-nav">
+                <button id="prev-testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="next-testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2 class="section-heading">About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Filmorae is a passion project for movie lovers, built to help you find and discuss the films you love. Our platform allows you to search for movies, view detailed information, and share your thoughts with the community. We believe in the power of a shared cinematic experience.
+                </p>
+                <p>
+                    Our mission is to create an engaging and intuitive space where every voice in the cinematic community is heard. Whether you're a casual viewer or a dedicated cinephile, Filmorae is designed to enrich your movie-watching journey.
+                </p>
+            </div>
+            <img class="about-image" src="img/Aboutus.png" alt="A person watching a movie on a laptop">
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2 class="section-heading">Get in Touch</h2>
+        <p style="text-align:center;">Have a question or a suggestion? We'd love to hear from you.</p>
+        <div class="contact-form-container">
+            <form id="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <p>You can also reach us directly at: <a href="mailto:govindchoudhari@filmorae.com">admin@filmorae.com</a></p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid container">
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Support</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <p>Follow us on social media:</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Movie Details Modal -->
+    <div id="movie-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-details">
+                <!-- Movie details will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Toast message box -->
+    <div id="toast" class="toast"></div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
