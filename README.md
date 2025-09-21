@@ -75,7 +75,7 @@ Open your browser and navigate to the address shown in your terminal<br>
 ## 💻 Live Preview
 You can see a live version of the project here:
 
-[**Filmorae**]()
+[**Filmorae**](https://filmorae.netlify.app/)
 --- 
 
 Built with ❤️ by **Govind Chudhari @2025**
